@@ -1,0 +1,31 @@
+{
+  "name": "panda-bubble-tea",
+  "version": "1.0.0",
+  "description": "Página web para Panda Bubble Tea",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpx servor src/ index.html 1234 --reload",
+    "lint": "oxlint src/",
+    "format": "oxfmt src/",
+    "deploy": "echo 'Deploying...'"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "web-development",
+    "drinks-store"
+  ],
+  "author": "DV1L",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "type": "module",
+  "devDependencies": {
+    "oxfmt": "0.47.0",
+    "oxlint": "1.62.0",
+    "servor": "^4.0.2"
+  },
+  "dependencies": {
+    "npkill": "^0.12.2"
+  }
+}
