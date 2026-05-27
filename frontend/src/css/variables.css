@@ -5,8 +5,9 @@
     --color-secondary-text: #797979;
     --color-primary: #FFC16B;
 
-    --br-fullround: 4rem;
-    --br-round: 1rem;
+    --br-fullround: 50%;
+    --br-round: 4rem;
+    --br-semiround: 1rem;
 
     --margin-l: 3rem;
     --margin-m: 1.5rem;

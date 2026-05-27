@@ -30,10 +30,16 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
-h1 {
+.heading-l {
     font-family: "Chillax", sans-serif;
     font-weight: var(--fw-semi);
     font-size: var(--fs-h1);
+}
+
+.heading-m {
+    font-family: "Chillax", sans-serif;
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-h2);
 }
 
 h3 {
@@ -105,11 +111,38 @@ p {
 }
 
 /* Primitives */
+.logo {
+    width: 48px;
+    aspect-ratio: 1;
 
-.image {
+    background-color: var(--color-main-text);
+    mask: url('/src/assets/icons/logoPBT.svg') center/contain no-repeat;
+    -webkit-mask: url('/src/assets/icons/logoPBT.svg') center/contain no-repeat;
+    mask-size: 120%;
+}
+
+.product-img {
     border: 3px solid var(--color-border);
     border-radius: var(--br-fullround);
     box-shadow: var(--shadow);
+    object-fit: cover;
+    width: 300px;
+    aspect-ratio: 1;
+}
+
+.review-img {
+    border: 3px solid var(--color-border);
+    border-radius: var(--br-fullround);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    width: 100px;
+    aspect-ratio: 1;
+}
+
+.banner-img {
+    width: 402px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .control {
@@ -120,7 +153,7 @@ p {
     padding: var(--padding-m) var(--padding-l);
 
     border: 1px solid var(--color-border);
-    border-radius: var(--br-fullround);
+    border-radius: var(--br-round);
 
     background-color: var(--color-bg);
     color: var(--color-secondary-text);
@@ -154,7 +187,7 @@ p {
     }
 
     &.control-input {
-        border-radius: var(--br-round);
+        border-radius: var(--br-semiround);
     }
 
     &.control-float {
