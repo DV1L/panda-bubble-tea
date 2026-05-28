@@ -1,5 +1,6 @@
 @import url(../css/reset.css);
 @import url(../css/variables.css);
+@import url(../css/landing.css);
 
 @font-face {
     font-family: "Outfit";
@@ -24,6 +25,9 @@
 }
 
 body {
+    min-height: 100vh;
+    width: min(100%, 402px);
+
     background-color: var(--color-bg);
     color: var(--color-main-text);
 
@@ -36,9 +40,9 @@ body {
     font-size: var(--fs-h1);
 }
 
-.heading-m {
+.heading-r {
     font-family: "Chillax", sans-serif;
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-h2);
 }
 
@@ -63,12 +67,12 @@ p {
     font-size: var(--fs-p);
 }
 
-/* Utilities */
-
-.flex {
-    display: flex;
+.sm-p {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-s);
 }
 
+/* Utilities */
 .row {
     display: flex;
     align-items: center;
@@ -84,7 +88,7 @@ p {
 .cluster {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: var(--gap-m);
 }
 
 .grid {
@@ -94,6 +98,7 @@ p {
 .center {
     display: grid;
     place-items: center;
+    gap: var(--gap-m);
 }
 
 .sidebar {
@@ -102,8 +107,13 @@ p {
 }
 
 .container {
-  width: min(100% - 2rem, 1200px);
+  width: min(100%, 1200px);
   margin-inline: auto;
+}
+
+.no-spacing {
+    gap: 0;
+    text-align: center;
 }
 
 .hidden {
@@ -126,8 +136,17 @@ p {
     border-radius: var(--br-fullround);
     box-shadow: var(--shadow);
     object-fit: cover;
-    width: 300px;
+    width: 200px;
     aspect-ratio: 1;
+}
+
+.drink-img {
+    border: 3px solid var(--color-border);
+    border-radius: var(--br-semiround);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+    width: 242px;
+    height: 300px;
 }
 
 .review-img {
@@ -139,11 +158,6 @@ p {
     aspect-ratio: 1;
 }
 
-.banner-img {
-    width: 402px;
-    height: 150px;
-    object-fit: cover;
-}
 
 .control {
     display: inline-flex;
