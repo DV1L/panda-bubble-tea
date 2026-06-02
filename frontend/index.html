@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panda Bubble Tea</title>
   <link rel="stylesheet" href="src/css/global.css">
+  <link rel="stylesheet" href="src/css/landing.css">
   <script type="module" src="src/js/app.js"></script>
 </head>
 
@@ -13,55 +14,73 @@
   <header>
     <nav class="row container navbar">
       <svg class="logo"></svg>
+
+      <div class="tabs">
+        <span>Inicio</span>
+        <span>Menú</span>
+        <span>Reseñas</span>
+        <span>Contacto</span>
+      </div>
+
       <div class="control control-float">
         <span class="icon" style="--icon: url('src/assets/icons/ui/shoppingCart.svg')"></span>
       </div>
     </nav>
   </header>
 
-  <main class="center hero">
-    <div class="no-spacing">
-      <p>SMOOTHIE</p>
-      <h1 class="heading-l">Piña Colada</h1>
+  <main class="grid hero">
+    <div class="column hero-content">
+      <div class="no-spacing">
+        <p>SMOOTHIE</p>
+        <h1 class="heading-l">Piña Colada</h1>
+      </div>
+
+      <p class="drink-desc">Dulce, cremosa y tropical, con la combinación perfecta de coco y piña refrescante.</p>
+      <button class="control control-primary hero-btn">Personalizar
+        <span class="icon" style="--icon: url('src/assets/icons/ui/shoppingBag.svg')"></span>
+      </button>
     </div>
-    <img class="drink-img" src="/src/assets/images/drinks/smoothies/piña.webp" alt="Piña Colada" width="300">
-    <div class="row dots">
-      <div></div>
-      <div></div>
-      <div></div>
+
+    <div class="column hero-visuals">
+      <img class="img drink-img" src="/src/assets/images/drinks/smoothies/piña.webp" alt="Piña Colada" width="300">
+      <div class="row dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <button class="control control-primary">Personalizar
-      <span class="icon" style="--icon: url('src/assets/icons/ui/shoppingBag.svg')"></span>
-    </button>
+
     <img class="stickers sticker-colada" src="/src/assets/images/stickers/ui/colada.avif" alt="Piña colada sticker"
       width="24">
   </main>
 
   <section class="grid menu">
-    <h2 class="heading-l">Frutas 100% Naturales</h2>
-    <p>Ofrecemos el mejor Bubble Tea con sabores innovadores y únicos con ingredientes frescos y de calidad.</p>
-    <div class="row">
-      <button class="control control-primary">Ver menú
-        <span class="icon" style="--icon: url('src/assets/icons/ui/mobileUp.svg')"></span>
-      </button>
-      <img class="product-img" src="/src/assets/images/landing/drinks.avif" alt="Tropical drinks" width="200"
-        height="200">
+    <div class="column">
+      <h2 class="heading-l">Frutas 100% Naturales</h2>
+      <p>Ofrecemos el mejor Bubble Tea con sabores innovadores e ingredientes frescos y de calidad.</p>
+      <a href="/src/pages/menu.html">
+        <button class="control control-primary">
+          Ver menú
+          <span class="icon" style="--icon: url('src/assets/icons/ui/mobileUp.svg')"></span>
+        </button>
+      </a>
     </div>
+    <img class="img product-img" src="/src/assets/images/landing/drinks.avif" alt="Tropical drinks" width="200"
+      height="200">
     <img class="stickers sticker-cocktail" src="/src/assets/images/stickers/ui/cocktail.avif" alt="Cocktail sticker"
       width="24">
   </section>
 
-  <section class="grid reviews">
+  <section class="center reviews">
     <h2 class="heading-l">¿Qué dicen nuestros clientes?</h2>
 
-    <div class="row">
+    <div class="row first-review">
       <div class="column review-content">
         <p class="sm-p">Delicioso y refrescante, sabores muy variados. Buena atención y limpieza del local.</p>
         <p>ANNE</p>
       </div>
-
       <div class="column review-media">
-        <img class="review-img" src="/src/assets/images/landing/anne.avif" alt="Woman having a drink" width="100"
+        <img class="img review-img" src="/src/assets/images/landing/anne.avif" alt="Woman having a drink" width="100"
           height="100">
         <img src="/src/assets/images/landing/quotes.svg" alt="Woman having a drink">
       </div>

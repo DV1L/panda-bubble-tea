@@ -1,6 +1,5 @@
 @import url(../css/reset.css);
 @import url(../css/variables.css);
-@import url(../css/landing.css);
 
 @font-face {
     font-family: "Outfit";
@@ -26,7 +25,6 @@
 
 body {
     min-height: 100vh;
-    width: min(100%, 402px);
 
     background-color: var(--color-bg);
     color: var(--color-main-text);
@@ -131,42 +129,39 @@ p {
     mask-size: 120%;
 }
 
-.product-img {
-    border: 3px solid var(--color-border);
+.img {
+    border: 3px solid var(--color-bg);
     border-radius: var(--br-fullround);
     box-shadow: var(--shadow);
     object-fit: cover;
+}
+
+.product-img {
     width: 200px;
     aspect-ratio: 1;
 }
 
 .drink-img {
-    border: 3px solid var(--color-border);
     border-radius: var(--br-semiround);
-    box-shadow: var(--shadow);
-    object-fit: cover;
     width: 242px;
     height: 300px;
 }
 
 .review-img {
-    border: 3px solid var(--color-border);
-    border-radius: var(--br-fullround);
-    box-shadow: var(--shadow);
-    object-fit: cover;
     width: 100px;
     aspect-ratio: 1;
 }
 
-
 .control {
     display: inline-flex;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
     gap: var(--gap-m);
 
     padding: var(--padding-m) var(--padding-l);
 
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-bg);
     border-radius: var(--br-round);
 
     background-color: var(--color-bg);

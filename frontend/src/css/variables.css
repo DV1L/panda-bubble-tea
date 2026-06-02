@@ -4,6 +4,7 @@
     --color-main-text: #3C3C3C;
     --color-secondary-text: #797979;
     --color-primary: #FFC16B;
+    --color-secondary: #F9E5CB;
 
     --br-fullround: 50%;
     --br-round: 4rem;
@@ -17,6 +18,9 @@
     --padding-m: 0.75rem;
     --padding-s: 0.25rem;
 
+    --section-pad: clamp(24px, 8vw, 64px);
+
+    --gap-l: 1.5rem;
     --gap-m: 0.75rem;
 
     --shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
