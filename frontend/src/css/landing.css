@@ -1,17 +1,19 @@
-.navbar {
-    justify-content: space-between;
-    padding: var(--padding-m) var(--padding-l);
-    border-bottom: 1px solid var(--color-border);
-
+.navbar{
     .tabs {
-        display: none;
+        list-style-type: none;
     }
 }
 
+.page {
+    display: grid;
+    place-items: center;
+    gap: var(--section-space);
+    padding: var(--padding-l) 0;
+}
+
+
 .hero {
     position: relative;
-    padding-inline: var(--section-pad);
-    padding-block: var(--padding-l);
     gap: var(--gap-m);
     place-items: center;
 
@@ -43,24 +45,26 @@
     }
 }
 
-.menu {
+.feature-section {
     position: relative;
+    width: 100%;
     background-color: var(--color-secondary);
     padding-inline: var(--section-pad);
     padding-block: var(--padding-l);
-    gap: var(--gap-m);
+    gap: var(--gap-l);
 
-     p {
-            max-width: 40ch;
-        }
+    .product-img {
+        flex-shrink: 0;
+    }
 
-    img {
-        justify-self: end;
+    .center {
+        text-align: center;
+        max-width: 35ch;
     }
 }
 
-.reviews {
-    padding: var(--padding-l);
+.reviews-section {
+    padding: 0 var(--section-pad);
     gap: var(--gap-m);
 
     .first-review {
@@ -70,6 +74,7 @@
 
         .review-media {
             position: relative;
+            flex-shrink: 0;
 
             :last-child {
                 width: 48px;
@@ -81,7 +86,8 @@
     }
 }
 
-.banner {
+.banner-section {
+    width: 100%;
     position: relative;
     isolation: isolate;
 
@@ -113,7 +119,6 @@
 
 .footer {
     position: relative;
-    padding: var(--padding-m) var(--padding-l);
     align-items: center;
 
     .media-icons {
@@ -128,8 +133,8 @@
 }
 
 .sticker-colada {
-    left: 36px;
-    top: 80px;
+    left: 0;
+    top: 0;
     transform: rotate(-20deg);
 }
 
@@ -140,8 +145,8 @@
 }
 
 .sticker-panda {
-    left: 40px;
-    top: -16px;
+    left: 0px;
+    top: -40px;
     transform: rotate(-12deg);
 }
 
@@ -149,19 +154,9 @@
 
 /* Tablet  */
 @media (width >= 700px) {
-    .navbar {
-        width: 100%;
-
-        .tabs {
-            display: flex;
-            width: max-content;
-            gap: 32px;
-        }
-    }
-
     .hero {
         grid-template-columns: repeat(2, auto);
-        justify-content: space-around;
+        gap: 64px;
 
         .hero-content {
             align-items: start;
@@ -178,22 +173,24 @@
         }
     }
 
-    .menu {
-        grid-template-columns: repeat(2, 1fr);
+    .feature-section {
+        grid-template-columns: 200px auto;
+        justify-content: center;
+        gap: 64px;
 
-        img {
+        .product-img {
             place-self: center;
             grid-column: 1;
             grid-row: 1/span 2;
         }
     }
 
-    .banner {
-        height: 300px;
+    .banner-section {
+        height: 225px;
         place-items: center;
 
         img {
-            height: 300px;
+            height: 225px;
             object-fit: cover;
         }
     }

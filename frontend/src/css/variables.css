@@ -18,7 +18,9 @@
     --padding-m: 0.75rem;
     --padding-s: 0.25rem;
 
-    --section-pad: clamp(24px, 8vw, 64px);
+    --section-pad: clamp(1.5rem, 8vw, 4rem);
+    --section-space: clamp(1.5rem, 4vh, 3rem);
+    --stack-space: clamp(0.75rem, 2vw, 1.5rem);
 
     --gap-l: 1.5rem;
     --gap-m: 0.75rem;
@@ -45,6 +47,6 @@
     --fs-p: 1rem;
     --fs-s: 0.875rem;
 
-    --transition-fast: 0.2s ease;
-    --transition-normal: 0.3s ease;
+    --transition-fast: 0.3s ease;
+    --transition-normal: 0.6s ease;
 }

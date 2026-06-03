@@ -15,115 +15,111 @@
     <nav class="row container navbar">
       <svg class="logo"></svg>
 
-      <div class="tabs">
-        <span>Inicio</span>
-        <span>Menú</span>
-        <span>Reseñas</span>
-        <span>Contacto</span>
-      </div>
+      <ul class="tabs">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#reviews">Reseñas</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
 
       <div class="control control-float">
-        <span class="icon" style="--icon: url('src/assets/icons/ui/shoppingCart.svg')"></span>
+        <span class="icon" style="--icon: url('/src/assets/icons/ui/shoppingCart.svg')"></span>
       </div>
     </nav>
   </header>
 
-  <main class="grid hero">
-    <div class="column hero-content">
-      <div class="no-spacing">
-        <p>SMOOTHIE</p>
-        <h1 class="heading-l">Piña Colada</h1>
+  <main class="page">
+    <section class="hero center" id="home">
+      <div class="column hero-content">
+        <div class="no-spacing">
+          <p>SMOOTHIE</p>
+          <h1 class="heading-l">Piña Colada</h1>
+        </div>
+
+        <p class="drink-desc">Dulce, cremosa y tropical, con la combinación perfecta de coco y piña refrescante.</p>
+        <button class="control control-primary hero-btn">Personalizar
+          <span class="icon" style="--icon: url('/src/assets/icons/ui/shoppingBag.svg')"></span>
+        </button>
       </div>
 
-      <p class="drink-desc">Dulce, cremosa y tropical, con la combinación perfecta de coco y piña refrescante.</p>
-      <button class="control control-primary hero-btn">Personalizar
-        <span class="icon" style="--icon: url('src/assets/icons/ui/shoppingBag.svg')"></span>
-      </button>
-    </div>
-
-    <div class="column hero-visuals">
-      <img class="img drink-img" src="/src/assets/images/drinks/smoothies/piña.webp" alt="Piña Colada" width="300">
-      <div class="row dots">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="column hero-visuals">
+        <img class="img drink-img" src="/src/assets/images/drinks/smoothies/piña.webp" alt="Piña Colada" width="300">
+        <div class="row dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
 
-    <img class="stickers sticker-colada" src="/src/assets/images/stickers/ui/colada.avif" alt="Piña colada sticker"
-      width="24">
+      <img class="stickers sticker-colada" src="/src/assets/images/stickers/ui/colada.avif" alt="Piña colada sticker"
+        width="24">
+    </section>
+
+    <section class="feature-section center" id="menu">
+      <img class="img product-img" src="/src/assets/images/landing/drinks.avif" alt="Tropical drinks" width="200"
+        height="200">
+      <div class="center">
+        <h2 class="heading-l">Frutas 100% Naturales</h2>
+        <p>Ofrecemos el mejor Bubble Tea con sabores innovadores e ingredientes frescos y de calidad.</p>
+        <a class="control control-primary" href="/src/pages/menu.html">
+          Ver menú
+          <span class="icon" style="--icon: url('/src/assets/icons/ui/mobileUp.svg')"></span>
+        </a>
+      </div>
+
+      <img class="stickers sticker-cocktail" src="/src/assets/images/stickers/ui/cocktail.avif" alt="Cocktail sticker"
+        width="24">
+    </section>
+
+    <section class="reviews-section center" id="reviews">
+      <h2 class="heading-l">¿Qué dicen nuestros clientes?</h2>
+
+      <div class="row first-review">
+        <div class="column review-content">
+          <p>Delicioso y refrescante, sabores muy variados. Buena atención y limpieza del local.</p>
+          <p>ANNE</p>
+        </div>
+        <div class="column review-media">
+          <img class="img review-img" src="/src/assets/images/landing/anne.avif" alt="Woman having a drink" width="100"
+            height="100">
+          <img src="/src/assets/images/landing/quotes.svg" alt="Woman having a drink">
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-section">
+      <div class="overlay"></div>
+      <h2 class="heading-m banner-text">¡Tu nuevo lugar favorito para disfrutar <span class="heading-l">bubble
+          tea!</span>
+      </h2>
+      <img src="/src/assets/images/landing/tropicalDrinks.avif" alt="Tropical drinks">
+    </section>
+
+    <footer class="column footer" id="contact">
+      <div class="row media-icons">
+        <a href="https://www.instagram.com/pandabubbleteanic/" class="control control-float" aria-label="Instagram"
+          target="_blank" rel="noopener noreferrer">
+          <span class="icon" style="--icon: url('src/assets/icons/social/instagram.svg')"></span>
+        </a>
+        <a href="https://www.facebook.com/people/Panda-Bubble-Tea/61577708530417/" class="control control-float"
+          aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <span class="icon" style="--icon: url('src/assets/icons/social/facebook.svg')"></span>
+        </a>
+        <a href="https://www.tiktok.com/@panda_bubbleteanic" class="control control-float" aria-label="TikTok"
+          target="_blank" rel="noopener noreferrer">
+          <span class="icon" style="--icon: url('src/assets/icons/social/tiktok.svg')"></span>
+        </a>
+        <a href="https://wa.me/50588316431?text=¡Hola!,%20quiero%20hacer%20un%20pedido." class="control control-float"
+          aria-label="Whatsapp" target="_blank" rel="noopener noreferrer">
+          <span class="icon" style="--icon: url('src/assets/icons/social/whatsapp.svg')"></span>
+        </a>
+      </div>
+      <p class="sm-p">Todos los derechos reservados ©</p>
+      <img class="stickers sticker-panda" src="/src/assets/images/stickers/ui/panda.avif" alt="Panda sticker"
+        width="24">
+    </footer>
   </main>
 
-  <section class="grid menu">
-    <div class="column">
-      <h2 class="heading-l">Frutas 100% Naturales</h2>
-      <p>Ofrecemos el mejor Bubble Tea con sabores innovadores e ingredientes frescos y de calidad.</p>
-      <a href="/src/pages/menu.html">
-        <button class="control control-primary">
-          Ver menú
-          <span class="icon" style="--icon: url('src/assets/icons/ui/mobileUp.svg')"></span>
-        </button>
-      </a>
-    </div>
-    <img class="img product-img" src="/src/assets/images/landing/drinks.avif" alt="Tropical drinks" width="200"
-      height="200">
-    <img class="stickers sticker-cocktail" src="/src/assets/images/stickers/ui/cocktail.avif" alt="Cocktail sticker"
-      width="24">
-  </section>
-
-  <section class="center reviews">
-    <h2 class="heading-l">¿Qué dicen nuestros clientes?</h2>
-
-    <div class="row first-review">
-      <div class="column review-content">
-        <p class="sm-p">Delicioso y refrescante, sabores muy variados. Buena atención y limpieza del local.</p>
-        <p>ANNE</p>
-      </div>
-      <div class="column review-media">
-        <img class="img review-img" src="/src/assets/images/landing/anne.avif" alt="Woman having a drink" width="100"
-          height="100">
-        <img src="/src/assets/images/landing/quotes.svg" alt="Woman having a drink">
-      </div>
-    </div>
-  </section>
-
-  <section class="center banner">
-    <div class="overlay"></div>
-    <h2 class="heading-r banner-text">¡Tu nuevo lugar favorito para disfrutar <span class="heading-l">bubble tea!</span>
-    </h2>
-    <img src="/src/assets/images/landing/tropicalDrinks.avif" alt="Tropical drinks">
-  </section>
-
-  <footer class="column footer">
-    <div class="row media-icons">
-      <a href="https://www.instagram.com/pandabubbleteanic/" class="control control-float" aria-label="Instagram"
-        target="_blank" rel="noopener noreferrer">
-        <span class="icon" style="--icon: url('src/assets/icons/social/instagram.svg')"></span>
-      </a>
-      <a href="https://www.facebook.com/people/Panda-Bubble-Tea/61577708530417/" class="control control-float"
-        aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-        <span class="icon" style="--icon: url('src/assets/icons/social/facebook.svg')"></span>
-      </a>
-      <a href="https://www.tiktok.com/@panda_bubbleteanic" class="control control-float" aria-label="TikTok"
-        target="_blank" rel="noopener noreferrer">
-        <span class="icon" style="--icon: url('src/assets/icons/social/tiktok.svg')"></span>
-      </a>
-      <a href="https://wa.me/50588316431?text=¡Hola!,%20quiero%20hacer%20un%20pedido." class="control control-float"
-        aria-label="Whatsapp" target="_blank" rel="noopener noreferrer">
-        <span class="icon" style="--icon: url('src/assets/icons/social/whatsapp.svg')"></span>
-      </a>
-    </div>
-    <p>Todos los derechos reservados ©</p>
-    <img class="stickers sticker-panda" src="/src/assets/images/stickers/ui/panda.avif" alt="Panda sticker" width="24">
-  </footer>
 </body>
-
-<!--<button class="control control-pill">Piña
-      <img src="src/assets/images/stickers/toppings/pineapple.avif" alt="" width="24" height="24">
-    </button>
-
-    <input type="text" class="control" placeholder="Buscar...">
-
-    <input type="text" class="control control-input" placeholder="Nombre"> -->
 
 </html>
