@@ -39,9 +39,9 @@
     --fw-regular: 400;
     --fw-light: 300;
 
-    --fs-h1: 1.813rem;
-    --fs-h2: 1.625rem;
-    --fs-h3: 1.438rem;
+    --fs-h1: clamp(1.5rem, 2.5vw, 2rem);
+    --fs-h2: clamp(1.4rem, 1.5vw, 1.8rem);
+    --fs-h3: clamp(1.3rem, 1.5vw, 1.6rem);
     --fs-h4: 1.25rem;
     --fs-h5: 1.125rem;
     --fs-p: 1rem;
