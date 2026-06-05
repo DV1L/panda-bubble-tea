@@ -1,0 +1,199 @@
+.navbar{
+    .tabs {
+        list-style-type: none;
+    }
+}
+
+.page {
+    display: grid;
+    place-items: center;
+    gap: var(--section-space);
+    padding: var(--padding-l) 0;
+}
+
+
+.hero {
+    position: relative;
+    gap: var(--gap-m);
+    place-items: center;
+
+    .hero-content {
+
+        .drink-desc {
+            display: none;
+        }
+    }
+
+    .hero-visuals {
+        align-items: center;
+        width: fit-content;
+
+        .dots {
+            gap: 6px;
+
+            span {
+                width: 12px;
+                aspect-ratio: 1;
+                background-color: var(--color-border);
+                border-radius: var(--br-fullround);
+            }
+
+            span:first-of-type {
+                background-color: var(--color-primary);
+            }
+        }
+    }
+}
+
+.feature-section {
+    position: relative;
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding-inline: var(--section-pad);
+    padding-block: var(--padding-l);
+    gap: var(--gap-l);
+
+    .product-img {
+        flex-shrink: 0;
+    }
+
+    .center {
+        text-align: center;
+        max-width: 35ch;
+    }
+}
+
+.reviews-section {
+    padding: 0 var(--section-pad);
+    gap: var(--gap-m);
+
+    .first-review {
+        .review-content {
+            max-width: 220px;
+        }
+
+        .review-media {
+            position: relative;
+            flex-shrink: 0;
+
+            :last-child {
+                width: 48px;
+                position: absolute;
+                right: -24px;
+                top: -8px;
+            }
+        }
+    }
+}
+
+.banner-section {
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+
+    .banner-text {
+        width: min(100% - 2rem);
+        text-align: center;
+        color: var(--color-bg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: luminosity;
+    }
+
+    img {
+        width: 100%;
+        height: 150px;
+
+        object-fit: cover;
+        object-position: center 80%;
+    }
+
+    .overlay {
+        inset: 0;
+        position: absolute;
+        background: var(--overlay-dark);
+    }
+}
+
+.footer {
+    position: relative;
+    align-items: center;
+
+    .media-icons {
+        width: 100%;
+        gap: var(--gap-m);
+        justify-content: center;
+    }
+}
+
+.stickers {
+    position: absolute;
+}
+
+.sticker-colada {
+    left: 0;
+    top: 0;
+    transform: rotate(-20deg);
+}
+
+.sticker-cocktail {
+    right: 40px;
+    bottom: -10px;
+    transform: rotate(20deg);
+}
+
+.sticker-panda {
+    left: 0px;
+    top: -40px;
+    transform: rotate(-12deg);
+}
+
+/* Container Queries */
+
+/* Tablet  */
+@media (width >= 700px) {
+    .hero {
+        grid-template-columns: repeat(2, auto);
+        gap: 64px;
+
+        .hero-content {
+            align-items: start;
+
+            .no-spacing {
+                text-align: left;
+            }
+
+            .drink-desc {
+                display: block;
+                text-align: left;
+                max-width: 334px;
+            }
+        }
+    }
+
+    .feature-section {
+        grid-template-columns: 200px auto;
+        justify-content: center;
+        gap: 64px;
+
+        .product-img {
+            place-self: center;
+            grid-column: 1;
+            grid-row: 1/span 2;
+        }
+    }
+
+    .banner-section {
+        height: 225px;
+        place-items: center;
+
+        img {
+            height: 225px;
+            object-fit: cover;
+        }
+    }
+}
+
+/* Desktop  */

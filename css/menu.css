@@ -1,0 +1,118 @@
+.page {
+    display: grid;
+    gap: var(--section-space);
+    padding: var(--section-pad);
+    margin: auto;
+    max-width: 1200px;
+}
+
+.page-header {
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    padding-inline: var(--padding-l);
+    padding-block: var(--padding-m);
+    border: 1px solid var(--color-border);
+    border-radius: var(--br-round);
+    max-width: 500px;
+}
+
+.categories {
+    display: flex;
+    padding: 2px;
+    gap: var(--gap-m);
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.drink-section {
+    display: grid;
+    gap: var(--stack-space);
+}
+
+.drink-heading {
+    display: flex;
+    gap: var(--gap-l);
+    align-items: baseline;
+}
+
+.drink-grid {
+    display: grid;
+    justify-content: center;
+    gap: var(--stack-space);
+
+    grid-template-columns: repeat(auto-fit, 320px);
+}
+
+.product {
+    display: grid;
+    border: 1px solid var(--color-border);
+    border-radius: var(--br-semiround);
+    overflow: hidden;
+    gap: var(--stack-pad);
+
+    .product-trigger {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: var(--padding-m) var(--padding-l);
+        cursor: pointer;
+
+        ::-webkit-details-marker {
+            display: none;
+        }
+
+        .icon {
+            flex-shrink: 0;
+            transform: rotate(-90deg);
+            transition: var(--transition-fast);
+        }
+    }
+
+    .product-card {
+        display: grid;
+        gap: var(--stack-space);
+        padding: 0 0 var(--padding-l);
+        justify-items: center;
+
+        .product-media {
+            position: relative;
+
+            .add-cart {
+                background-color: var(--color-bg);
+                border: none;
+                width: 48px;
+                height: 48px;
+                border-radius: var(--br-fullround);
+                display: grid;
+                place-items: center;
+                position: absolute;
+                cursor: pointer;
+                top: var(--padding-m);
+                right: var(--padding-m);
+            }
+            .price {
+                position: absolute;
+                bottom: var(--padding-m);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .description {
+            max-width: 30ch;
+            text-align: center;
+        }
+    }
+}
+
+.product[open] {
+    transition: var(--transition-fast);
+
+    .icon {
+       transform: rotate(0deg);
+   }
+}
