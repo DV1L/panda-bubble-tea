@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Bubble Tea</title>
+  <script type="module" crossorigin src="/panda-bubble-tea/assets/global-7qFBPkbk.js"></script>
+  <link rel="stylesheet" crossorigin href="/panda-bubble-tea/assets/global-5l1EDa8O.css">
+  <link rel="stylesheet" crossorigin href="/panda-bubble-tea/assets/menu-Ccc8ZwXy.css">
+</head>
+
+<body>
+    <header>
+        <nav class="row container navbar">
+            <a href="./index.html">
+                <svg class="logo"></svg>
+            </a>
+
+            <a href="checkout.html" class="control control-float">
+                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M223.5-103.5Q200-127%20200-160t23.5-56.5Q247-240%20280-240t56.5%2023.5Q360-193%20360-160t-23.5%2056.5Q313-80%20280-80t-56.5-23.5Zm400%200Q600-127%20600-160t23.5-56.5Q647-240%20680-240t56.5%2023.5Q760-193%20760-160t-23.5%2056.5Q713-80%20680-80t-56.5-23.5ZM208-800h590q23%200%2035%2020.5t1%2041.5L692-482q-11%2020-29.5%2031T622-440H324l-44%2080h480v80H280q-45%200-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38%2080Z'/%3e%3c/svg%3e&quot;)"></span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="row page-header">
+            <a href="./index.html">
+                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-80q-50-5-96-24.5T256-156l56-58q29%2021%2061.5%2034t66.5%2018v82Zm80%200v-82q104-15%20172-93.5T760-438q0-117-81.5-198.5T480-718h-8l64%2064-56%2056-160-160%20160-160%2056%2058-62%2062h6q75%200%20140.5%2028.5t114%2077q48.5%2048.5%2077%20114T840-438q0%20137-91%20238.5T520-80ZM198-214q-32-42-51.5-88T122-398h82q5%2034%2018%2066.5t34%2061.5l-58%2056Zm-76-264q6-51%2025-98t51-86l58%2056q-21%2029-34%2061.5T204-478h-82Z'/%3e%3c/svg%3e&quot;)"></span>
+            </a>
+            <h1 class="heading-l">Nuestro menú</h1>
+        </section>
+
+        <label class="search-form">
+            <input class="input" type="text" placeholder="Buscar..." name="q">
+
+            <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M784-120%20532-372q-30%2024-69%2038t-83%2014q-109%200-184.5-75.5T120-580q0-109%2075.5-184.5T380-840q109%200%20184.5%2075.5T640-580q0%2044-14%2083t-38%2069l252%20252-56%2056ZM380-400q75%200%20127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75%200-127.5%2052.5T200-580q0%2075%2052.5%20127.5T380-400Z'/%3e%3c/svg%3e&quot;)"></span>
+        </label>
+
+        <section class="categories" aria-label="Categorías">
+            <button class="control control-primary">Todo (23)
+            </button>
+            <button class="control">Sodas
+                <img src="/panda-bubble-tea/assets/soda-CEmUU9Zy.avif" alt="" width="24" height="24">
+            </button>
+            <button class="control">Cafés
+                <img src="/panda-bubble-tea/assets/coffee-CfslpytM.avif" alt="" width="24" height="24">
+            </button>
+            <button class="control">Matcha
+                <img src="/panda-bubble-tea/assets/matcha-D2LYdT49.avif" alt="" width="24" height="24">
+            </button>
+            <button class="control">Milk Teas
+                <img src="/panda-bubble-tea/assets/tea-BFLh8r7v.avif" alt="" width="24" height="24">
+            </button>
+            <button class="control">Smoothies
+                <img src="/panda-bubble-tea/assets/smoothy-DzZwo0T4.avif" alt="" width="24" height="24">
+            </button>
+        </section>
+
+        <section class="drink-section" aria-labelledby="sodas-heading">
+            <header class="drink-heading">
+                <h2 class="subheading-l">Sodas</h2>
+                <span class="sm-p">4</span>
+            </header>
+
+            <div class="drink-grid">
+                <details class="product" name="soda" open>
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Té de limón con frutos rojos</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/t%C3%A9Rojo-jjvIHM8F.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 100</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Té negro, limón, concentrado de fresa y moras, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="soda">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Soda Italiana de Fresa</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/sdFresa-vTwBVojh.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Agua mineral gasificada, concentrado de fresa, té mariposa, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="soda">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Soda Italiana de Mora</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/sdMora-Bdg3obKe.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Agua mineral gasificada, concentrado de mora, té mariposa, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="soda">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Soda Italiana de Maracuyá</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/sdMaracuy%C3%A1-CvuwCty1.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Agua mineral gasificada, concentrado de maracuyá, té mariposa, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="drink-section" aria-labelledby="coffees-heading">
+            <header class="drink-heading">
+                <h2 class="subheading-l">Cafés</h2>
+                <span class="sm-p">5</span>
+            </header>
+
+            <div class="drink-grid">
+                <details class="product" name="coffee" open>
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Frappé Caramelo Macchiato</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/macchiato-D6yuwMV3.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Shot de espresso, caramelo francés, leche, hielo, tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="coffee">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Frappé Moccachino</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/mocca-RQkfi_ml.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Shot de espresso, chocolate, leche, hielo, tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="coffee">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Frappé Expresso Chai</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/chai-DbDr1X_v.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Shot de espresso, té chai masala, leche, hielo, tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="coffee">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Ice Vainilla Expresso Latte</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/latte-BKmy8LHB.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Shot de espresso, vainilla, leche, hielo, tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="coffee">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Brown Sugar Frappé Expresso</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/brown-CIeoUzm5.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Shot de espresso, sirup brown sugar, leche, hielo, tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+
+            </div>
+        </section>
+
+        <section class="drink-section" aria-labelledby="matcha-heading">
+            <header class="drink-heading">
+                <h2 class="subheading-l">Matcha</h2>
+                <span class="sm-p">3</span>
+            </header>
+
+            <div class="drink-grid">
+                <details class="product" name="matcha" open>
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Fresa Matcha</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/fresaM-DYVQfnYG.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 160</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Nube fría de matcha, leche, concentrado de fresa, hielo y boba de sabores.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="matcha">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Coconut Matcha</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/cocoM-Cv_5v2D1.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 160</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Nube fría de matcha, leche, concentrado de coco, hielo y boba de sabores.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="matcha">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Mango Matcha</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/mangoM-BK1Jcwo6.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 160</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Nube fría de matcha, leche, concentrado de mango, hielo y boba de sabores.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="drink-section" aria-labelledby="teas-heading">
+            <header class="drink-heading">
+                <h2 class="subheading-l">Milk Teas</h2>
+                <span class="sm-p">4</span>
+            </header>
+
+            <div class="drink-grid">
+                <details class="product" name="tea" open>
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Milk Tea de Jasmine</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/jasmine-GLIBLP1w.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Té verde, jazmín latte, leche, hielo, boba.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="tea">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Milk Tea de Taro</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/taro-CBjUOAWW.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Té verde, taro latte, leche, hielo, boba.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="tea">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Milk Tea de Thai</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/jasmine-GLIBLP1w.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Té verde, té thai, leche evaporada & condensada, hielo, boba.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="tea">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Milk Tea de Matcha</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/matcha-BvF_Ygb7.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Té verde, matcha, leche, hielo, boba.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="drink-section" aria-labelledby="smoothies-heading">
+            <header class="drink-heading">
+                <h2 class="subheading-l">Smoothies</h2>
+                <span class="sm-p">7</span>
+            </header>
+
+            <div class="drink-grid">
+                <details class="product" name="smth" open>
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Horchata</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/horchata-Ct7XDKTA.avif" alt=" ">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Horchata, leche condensada, caramelo francés, hielo y tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Mango</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/mango-DfoJdd7_.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Concentrado de mango, crema de coco, leche, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Fresa</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/fresa-Dnc2fhfV.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Concentrado de fresa, leche, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Moras</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/mora-Bxv_l26B.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Concentrado de moras, leche, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Piña Colada</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/pi%C3%B1a-BMBK3pXS.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Concentrado de piña y coco, leche, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Guanábana</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/pi%C3%B1a-BMBK3pXS.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Concentrado de guanábana, leche, hielo y boba de sabor.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="product" name="smth">
+                    <summary class="product-trigger">
+                        <span class="subheading-s">Smoothie de Oreo</span>
+                        <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M480-344%20240-584l56-56%20184%20184%20184-184%2056%2056-240%20240Z'/%3e%3c/svg%3e&quot;)"></span>
+                    </summary>
+
+                    <div class="product-card">
+                        <div class="product-media">
+                            <img class="img drink-img" src="/panda-bubble-tea/assets/oreo-D_lVBubg.avif" alt="">
+                            <button class="add-cart">
+                                <span class="icon" style="--icon: url(&quot;data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='24px'%20viewBox='0%20-960%20960%20960'%20width='24px'%20fill='%23e3e3e3'%3e%3cpath%20d='M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z'/%3e%3c/svg%3e&quot;)"></span>
+                            </button>
+                            <p class="control control-primary price">C$ 130</p>
+                        </div>
+
+                        <div class="description">
+                            <p>Chocolate, galleta oreo, leche, hielo y tapioca.</p>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
