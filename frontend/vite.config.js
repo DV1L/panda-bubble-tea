@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 
 export default defineConfig({
-  plugins: [react()],
   base: '/panda-bubble-tea/',
 
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        menu: resolve(__dirname, 'menu.html')
+        main: resolve('index.html'),
+        menu: resolve('menu.html'),
+        checkout: resolve('checkout.html')
       }
     }
   }
